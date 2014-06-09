@@ -1,0 +1,1 @@
+psql < canonisation.sql
