@@ -242,6 +242,10 @@ BEGIN
     str = regexp_replace(str, '(^| )SAINT( |$)', ' ST ', 'g');
     str = regexp_replace(str, '(^| )DOCTEUR( |$)', ' DOC ', 'g');
     str = regexp_replace(str, '(^| )REGIMENT( |$)', ' REGT ', 'g');
+    str = regexp_replace(str, '(^| )ENFANTS( |$)', ' ENFTS ', 'g');
+    str = regexp_replace(str, '(^| )ANCIENS?( |$)', ' ANC ', 'g');
+    str = regexp_replace(str, '(^| )ANCIENNES?( |$)', ' ANC ', 'g');
+    str = regexp_replace(str, '(^| )NEUVE( |$)', ' NVE ', 'g');
 
 
 
@@ -277,6 +281,7 @@ BEGIN
     str = regexp_replace(str, '^GRANDE RUE', 'GR');
     str = regexp_replace(str, '^GR GDE RUE', 'GR');
     str = regexp_replace(str, '^VC DITE ', '');
+    str = regexp_replace(str, ' RURAL DIT ', '');
     str = regexp_replace(str, ' ZAC$', '');
 
     str = regexp_replace(str, '(^| )1 ?ER( |$)', ' 1 ');
